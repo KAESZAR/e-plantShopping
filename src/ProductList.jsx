@@ -13,7 +13,6 @@ function ProductList() {
     const [showPlants, setShowPlants] = useState(false);   
     const cartItems = useSelector(state => state.cart.items);
     
-    
     const handleAddToCart = (plant) => {  
         dispatch(addItem({ ...plant, quantity: 1, id: plant.id, })); // Set the product name as key and value as true to indicate it's added to cart
       
